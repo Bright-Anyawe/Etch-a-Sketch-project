@@ -20,6 +20,9 @@ function getRandomColor() {
     return color;
 }
 
+function createGrid(numSquares) {
+    
+}
 
 
 
