@@ -49,6 +49,7 @@ function handleButtonClick() {
     if (numSquares !== null && numSquares !== '') {
         const parsedNumSquares = parseInt(numSquares);
         
+
     }
 }
 
