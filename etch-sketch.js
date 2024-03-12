@@ -21,7 +21,10 @@ function getRandomColor() {
 }
 
 function createGrid(numSquares) {
-    
+
+    while (gridContainer.firstChild) {
+        gridContainer.firstChild.remove();
+    }
 }
 
 
