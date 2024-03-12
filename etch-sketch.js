@@ -45,7 +45,11 @@ function createGrid(numSquares) {
 function handleButtonClick() {
 
     const numSquares = prompt('Enter number of squares per side:')
-    
+
+    if (numSquares !== null && numSquares !== '') {
+        const parsedNumSquares = parseInt(numSquares);
+        
+    }
 }
 
 
