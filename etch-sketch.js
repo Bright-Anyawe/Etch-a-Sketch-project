@@ -40,8 +40,10 @@ function createGrid(numSquares) {
 
         gridContainer.appendChild(cell);
     }
+} 
 
-
+function handleButtonClick() {
+    
 }
 
 
