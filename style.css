@@ -12,16 +12,12 @@ body {
 #gridContainer {
     display: flex;
     flex-wrap: wrap;
+    width: 400px;
+    height: 400px;
 }
 
-
-
-.mainSide {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 7rem;
-    border-style: solid;
-    min-width: 16rem;
-    min-height: 16rem;
-};
+.cell {
+    flex-basis: 6.25%;
+    padding-bottom: 6.25%;
+    background-color: #000;
+}
