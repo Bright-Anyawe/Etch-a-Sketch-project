@@ -48,7 +48,13 @@ function handleButtonClick() {
 
     if (numSquares !== null && numSquares !== '') {
         const parsedNumSquares = parseInt(numSquares);
-        
+
+        if (!isNaN(parsedNumSquares) && parsedNumSquares > 0 && parsedNumSquares <= 100) {
+            createGrid(parsedNumSquares);
+        }
+        else {
+            alert('Invalid Input. Please enter a positive number up to 100')
+        }
 
     }
 }
