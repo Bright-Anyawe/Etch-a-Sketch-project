@@ -20,5 +20,6 @@ body {
 .cell {
     flex-basis: 6.25%;
     padding-bottom: 6.25%;
+    display: inline-block;
     background-color: #b3dce1;
 }

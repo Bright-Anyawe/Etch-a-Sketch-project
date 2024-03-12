@@ -26,7 +26,7 @@ function createGrid(numSquares) {
         gridContainer.firstChild.remove();
     }
 
-    const cellwidth = `${960 / numSquares}px`;
+    const cellwidth = `${16 / numSquares}px`;
 
     for (i = 0; i < numSquares * numSquares; i++) {
         const cell = document.createElement('div');
@@ -61,10 +61,10 @@ function handleButtonClick() {
 createGrid(16);
 
 const button = document.createElement('button');
-button.textContent = 'Create a new Grid';
+button.textContent = 'Create New Grid';
 button.addEventListener('click', handleButtonClick);
 
-document.body.insertBefore(button,document.body.firstChild )
+document.body.insertBefore(button,document.body.firstChild)
 
 
 
