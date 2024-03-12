@@ -60,6 +60,10 @@ function handleButtonClick() {
 }
 createGrid(16);
 
+const button = document.createElement('button');
+button.textContent = 'Create a new Grid';
+button.addEventListener('click', handleButtonClick)
+
 
 
 
