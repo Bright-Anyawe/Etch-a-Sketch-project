@@ -25,6 +25,23 @@ function createGrid(numSquares) {
     while (gridContainer.firstChild) {
         gridContainer.firstChild.remove();
     }
+
+    const cellwidth = `${960 / numSquares}px`;
+
+    for (i = 0; i < numSquares * numSquares; i++) {
+        const cell = document.createElement('div');
+        cell.classList.add('cell');
+        cell.style.width = cellwidth;
+        cell.style.height = cellwidth;
+
+        cell.addEventListener('mouseover', () => {
+            cell.style.backgroundColor = getRandomColor();
+        });
+
+        gridContainer.appendChild(cell);
+    }
+
+
 }
 
 
