@@ -26,8 +26,7 @@ function createGrid(numSquares) {
         gridContainer.firstChild.remove();
     }
 
-    const cellwidth = 600 / numSquares;
-
+    const cellwidth = 800 / numSquares;
     for (i = 0; i < numSquares * numSquares; i++) {
         const cell = document.createElement('div');
         cell.classList.add('cell');
