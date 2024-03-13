@@ -26,13 +26,13 @@ function createGrid(numSquares) {
         gridContainer.firstChild.remove();
     }
 
-    const cellwidth = `${16 / numSquares}px`;
+    const cellwidth = 600 / numSquares;
 
     for (i = 0; i < numSquares * numSquares; i++) {
         const cell = document.createElement('div');
         cell.classList.add('cell');
-        cell.style.width = cellwidth;
-        cell.style.height = cellwidth;
+        cell.style.width = `${cellwidth}px`;
+        cell.style.height = `${cellwidth}px`;
 
         cell.addEventListener('mouseover', () => {
             cell.style.backgroundColor = getRandomColor();
@@ -58,13 +58,13 @@ function handleButtonClick() {
 
     }
 }
-createGrid(16);
+createGrid(50)
 
 const button = document.createElement('button');
 button.textContent = 'Create New Grid';
 button.addEventListener('click', handleButtonClick);
 
-document.body.insertBefore(button,document.body.firstChild)
+document.body.insertBefore(button, document.body.firstChild)
 
 
 

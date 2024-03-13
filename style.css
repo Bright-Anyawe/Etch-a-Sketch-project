@@ -12,13 +12,17 @@ body {
 #gridContainer {
     display: flex;
     flex-wrap: wrap;
-    width: 400px;
-    height: 400px;
+    width: 600px;
+    height: 600px;
+    box-sizing: border-box;
+
 }
 
 .cell {
-    flex-basis: 6.25%;
-    padding-bottom: 6.25%;
-    display: inline-block;
-    background-color: #b3dce1;
+    background-color: aquamarine;
+    box-sizing: border-box;
+    width: 6.25%;
+    height: 6.25%;
+
+
 }
